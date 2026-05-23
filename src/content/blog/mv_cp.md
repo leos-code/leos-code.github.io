@@ -1,7 +1,7 @@
 ---
 author: blake
 pubDatetime: 2022-07-21T00:00:00Z
-title: "linux下移动文件或目录用哪个命令"
+title: "mv 命令的坑"
 postSlug: mv-cp
 featured: false
 draft: false
@@ -9,13 +9,10 @@ ogImage: ""
 tags:
   - mv
   - cp
-description: "linux下移动文件或目录用哪个命令"
+description: "mv 命令的坑"
 ---
 
-# linux下移动文件或目录用哪个命令
-
-linux下移动文件或目录用哪个命令？
-这个看似简单的问题，里面存在很多细节
+# mv 命令的坑
 
 **mv命令的问题：**
 mv 大文件夹时，假如命令中断，会导致部分文件没有被移动到目标文件夹。

@@ -1,13 +1,13 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://leos-code.github.io/astro-blog/", // replace this with your deployed domain
+  website: "https://leos-code.github.io", // replace this with your deployed domain
   author: "bobo",
   desc: "个人博客",
-  title: "bobo的博客",
+  title: "海波的博客",
   ogImage: "",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 10,
 };
 
 //export const LOCALE = ["en-EN"]; // set to [] to use the environment default
@@ -23,7 +23,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/blakegger",
+    href: "https://github.com/leos-code",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -53,7 +53,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Twitter",
-    href: "",
+    href: "https://x.com/blakegger",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },

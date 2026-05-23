@@ -27,6 +27,6 @@ description: "写文章的第一关"
 
         [**文章同步助手**](https://www.wechatsync.com/)，它是以chrome extension的方式提供服务，只要浏览器有微信的登录状态它能自动识别同步的账号，github主页提示不会记录个人信息，安全性可能会有点保障，笔者最近几次都在使用，整体来说还是比较好用。
 
-    它是开源软件，github地址： `https://github.com/wechatsync/Wechatsync`
+    它是开源软件，github地址： "https://github.com/wechatsync/Wechatsync"
 
-        使用过程中遇到个比较麻烦的问题，同步助手不支持本地md同步到微信，微信公众号又不支持md格式的文章，笔者找了个非常好用的工具，支持把md格式转换成mp的html格式。它的在线预览版地址[**微信公众号排版编辑器**](https://lab.lyric.im/wxformat)，github地址：`https://github.com/lyricat/wechat-format`，非常好用。
+        使用过程中遇到个比较麻烦的问题，同步助手不支持本地md同步到微信，微信公众号又不支持md格式的文章，笔者找了个非常好用的工具，支持把md格式转换成mp的html格式。它的在线预览版地址[**微信公众号排版编辑器**](https://lab.lyric.im/wxformat)，github地址："https://github.com/lyricat/wechat-format"，非常好用。
