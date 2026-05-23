@@ -34,7 +34,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <div class="flex-1 text-center sm:text-left">
           <div class="flex items-center gap-2 justify-center sm:justify-start">
             <h1 class="my-2 inline-block text-2xl font-bold sm:my-4 sm:text-3xl">
-              Hi, I'm @steipete.
+              Hi, I'm haibo.
             </h1>
             <a
               target="_blank"
@@ -65,8 +65,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <p>
             Become a research-driven creator at the frontier of AI.
           </p>
-        </div>
-      </div>     
+      {
+        // only display if at least one social link is enabled
+        socialCount > 0 && (
+          <div class="social-wrapper">
+            <div class="social-links">Social Links:</div>
+            <Socials />
+          </div>
+        )
+      }
+      </div>
+    </div>
+    </section>
 
 <!--
       <h1 class="mr-2">每日推荐</h1>
@@ -101,18 +111,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </LinkButton> for more info.
       </p>
 -->
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-      </div>
-    </div>
-    </section>
 
     <Hr />
 
@@ -197,11 +195,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pb-6 pt-12;
+    @apply pb-6 pt-12 text-left;
   }
   #featured h2,
   #recent-posts h2 {
     @apply text-2xl font-semibold tracking-wide;
+  }
+  #featured ul,
+  #recent-posts ul {
+    @apply text-left;
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
