@@ -23,6 +23,52 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
+      <div class="flex flex-col sm:flex-row items-start gap-4">
+        <a href="/about" class="block mx-auto sm:mx-0 group">
+          <img
+            src="/avatar.jpg"
+            alt="haiboz"
+            class="w-40 h-40 rounded-full object-cover flex-shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+          />
+        </a>
+        <div class="flex-1 text-center sm:text-left">
+          <div class="flex items-center gap-2 justify-center sm:justify-start">
+            <h1 class="my-2 inline-block text-2xl font-bold sm:my-4 sm:text-3xl">
+              Hi, I'm @steipete.
+            </h1>
+            <a
+              target="_blank"
+              href="/rss.xml"
+              class="inline-block"
+              aria-label="rss feed"
+              title="RSS Feed"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="scale-125 stroke-accent stroke-3"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <path d="M4 11a9 9 0 0 1 9 9" />
+              </svg>
+              <span class="sr-only">RSS Feed</span>
+            </a>
+          </div>
+          <p>
+            Become a research-driven creator at the frontier of AI.
+          </p>
+        </div>
+      </div>     
+
+<!--
       <h1 class="mr-2">每日推荐</h1>
       <a
         target="_blank"
@@ -43,6 +89,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
 		置顶文章
       </p>
+      -->
 <!--
       <p>
         Read the blog posts or check
@@ -63,6 +110,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </div>
         )
       }
+      </div>
+    </div>
     </section>
 
     <Hr />
